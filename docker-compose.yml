@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    container_name: conep-db
+    image: postgres:13.16-bullseye
+    ports:
+      - 5430:5432
+    environment:
+      POSTGRES_DB: conep
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345678
